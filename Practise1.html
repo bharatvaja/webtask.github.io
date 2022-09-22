@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>practice page</title>
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans&family=Rubik&display=swap">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap')
+:root{
+--bg:light;
+--p:black;
+}
+*{
+font-family: 'Open Sans', sans-serif;
+margin:0;
+padding:0;
+justify-content:center;
+box-sizing:border-box;
+}
+.about{
+font-family: 'Dancing Script', cursive;
+font-weight:10px;
+background-color:var(--bg);
+}
+.card:hover{
+transform:scale(1.0);
+transition:all 0.3s ease;
+opacity:0.5;
+box-shadow:2px 3px 10x blue;
+}
+p,h2{
+font-family: 'Dosis', sans-serif;
+}
+ul{
+display:inline-block;
+}
+a{
+text-decoration:none;
+font-family: 'Dosis', sans-serif;
+}
+.icon{
+padding:2px;
+}
+.social{
+border-radius:10px;
+}
+.topimg{
+border-bottom-right-radius:33% 33%;
+}
+.txt{
+align-items:center;
+font-weight:bold;
+text-align:center;
+font-size:2rem;
+padding:10px;
+}
+.inner{
+overflow:hidden;
+}
+.inner img{
+transition:all 0.5s ease;
+}
+.inner:hover img{
+transform:scale(1.2);
+}
+#topbtn{
+position:fixed;
+bottom:40px;
+align-items:right;
+right:40px;
+width:50px;
+height:50px;
+background-color:#e74c3c;
+border:none;
+color:white;
+font-size:22px;
+}
+</style>
+</head>
+<body class="text-capitalize">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"> 
+<div class="container-fluid">
+<a class="navbar-brand fa-1" href="#">Design<span class="text-warning fa-1x">- Web</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+<span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="navmenu">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item"><a class="nav-link active" href="#"><i class="fa fa-home"> Home</i></a></li>
+<li class="nav-item"><a class="nav-link" href="#service"><i class="fa fa-building"> Service</i></a></li>
+<li class="nav-item"><a class="nav-link" href="#ourteam"><i class="fa fa-users"> Our Team</i></a></li>
+<li class="nav-item"><a class="nav-link" href="#faculty"><i class="fa fa-industry"> Faculty</i></a></li>
+<li class="nav-item"><a class="nav-link" href="#about as"><i class="fa fa-phone"> About As </i></a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button"  id="dropdown" data-bs-toggle="dropdown">
+Dropdown Links
+</a>
+<ul class="dropdown-menu " aria-labelledby="dropdown">
+<li><a class="dropdown-item" href="#">Home</a></li>
+<li><a class="dropdown-item" href="#">Portfolio</a></li>
+<li><a class="dropdown-item" href="#">Service</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#carouseldark" data-bs-slide-to="0" class="active"></button>
+<button type="button" data-bs-target="#carouseldark" data-bs-slide="1"></button>
+<button type="button" data-bs-target="#carouseldark" data-bs-slide="2"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="img/3d.jpg" class="d-block img-fluid">
+<div class="carousel-caption d-md-block">
+<h5 class="text-warning fa-1 text-center">First Slide Label</h5>
+<p>Some representative placeholdercontent for the first slide 
+</p>
+</div>
+</div>
+<div class="carousel-item">
+<img src="img/learncode.jpg" class="img-fluid d-block" alt="appleimg">
+<div class="carousel-caption d-md-block">
+<h5 class="text-warning fa-1 text-center">Secound Slide Label</h5>
+<p>Some Representative Placeholder content for the secound Slide</p>
+</div>
+</div>
+<div class="carousel-item">
+<img src="img/laptop.jpg" class="img-fluid d-block" alt="img">
+<div class="carousel-caption d-md-block">
+<h5 class="text-warning fa-1 text-center">Third Slide Label </h5>
+<p>Some representarive placeholder contenr for the third slide </p>
+</div>
+</div>
+
+</div>
+<section class="about bg-light">
+<div class="container">
+<h2 class="txt text-center" data-aos="fade-up" data-aos-offset="200">About <span class="text-primary text-center">As </span></h2>
+<hr class="w-25 m-auto">
+<div class="row mt-5">
+<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mx-auto" data-aos="zoom-in" data-aos-offset="200">
+<h2 class="text-warning">What do you want to know...?</h2>
+<hr class="w-25" data-aos="fade-left" data-aos-offset="300">
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+<button class="btn btn-dark b-1"><i class="fa fa-pencil"> Readme</i></button>
+<br>
+<br>
+<div class="accordion" id="accordionexam" data-aos="zoom-in-left" data-aos-offset="200">
+<div class="accordion-item">
+<div class="accordion-header" id="headingone">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+Accordion section One Page 
+</button>
+<div id="collapseOne" class="accordion-collapse collapse">
+<p class="p-5 text-start">Loren ipsun is know abiut to webscirpitn flanguage there are many webdesifmer for language Used for get Upcomi g noe w.simply dummy text of the printing and typesettin.....
+<br>
+<button class="btn btn-dark mt-2" type="button"><i class="fa fa-pencil"> Readme</i></button></p>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header" id="headingTwo">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+accordion Secound Page </button>
+</div>
+<div id="collapseTwo" class="accordion-collapse collapse">
+<p class="p-4 text-start">Loren ipsume is know about to webscipting language so for than about to oage In Know But hapoinrsh Just donit forget Young Baoir Somthing Language There Are mNau webscitpung languahe ...
+<br>
+<button class="btn btn-dark mt-2" type="button"><i class="fa fa-pencil"> Readme</i></button></p>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header" id="headingthree">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+Accordion three page </button>
+</div>
+<div id="collapseThree" class="accordion-collapse collapse">
+<p class="p-4 text-start">Loren ispume is know Someonce Problume Solution To Learn About to Page Demant accound To leanrspace About me Hight Requeeta Demo Languge Sonlearn About to mw .....
+<br>
+<button class="btn btn-dark mt-2" type="button"><i class="fa fa-pencil"> Readme</i></button></p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mx-auto" data-aos="fade-right" data-aos-offset="200">
+<figure class="mt-5">
+<div class="inner">
+<img src="img/apple.jpg" class="img-fluid wow fadeIn rounded  topimg" alt="img">
+</div>
+</figure>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+<br>
+<section class="jum bg-danger text-white py-3">
+<div class="container">
+<h2 class="txt" data-aos="zoom-in" data-aos-offset="200">
+Star's <span class="text-warning"> Today</span></h2>
+<hr class="w-25 m-auto">
+<div class="jumbotron rounded">
+<h2> Star The Today Leanr About </h2>
+<p class="py-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset </p>
+<button class="btn btn-primary ">Star's Free Trial</button>
+</div>
+</div>
+</section>
+<br>
+<section id="service" class="service bg-light">
+<div class="container">
+<h2 class="txt" data-aos="zoom-in" data-aos-offset="200">
+Our<span class="text-primary"> Service</span></h2>
+<hr class="w-25 m-auto">
+</h2>
+<div class="row py-2" data-aos="zoom-in-up" data-aos-offset="200">
+<div class="col-12 col-md-4 col-lg-4 col-xl-4 col-sm-12 py-2">
+<div class="card">
+<div class="card-body">
+<i class="fa fa-users bg-primary text-white rounded fa-1 p-2"></i>
+<h2 class="card-title">Web Designer</h2>
+<div class="card-text">
+<p>Something about to webdesiner for game Again Now So webdeginer for get upcoming for get now s ...</p>
+<button class="btn btn-primary"><i class="fa fa-pencil"> Readme</i></button>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-4 col-lg-4 col-xl-4 col-sm-12 py-2">
+<div class="card bg-primary text-white sm">
+<div class="card-body">
+<i class="fa fa-code bg-info fa-1 text-white p-2 rounded"></i>
+<h2 class="card-title">Web Devlopment</h2>
+<div class="card-text">
+<p>Something about to webdesiner for game Again Now So webdeginer for get upcoming for get now s ...</p>
+<button class="btn btn-info"><i class="fa fa-pencil"> Readme</i></button>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-lg-4 col-xl-4 col-12 col-sm-12 py-2">
+<div class="card">
+<div class="card-body">
+<i class="fa fa-code text-white bg-primary p-2 rounded fa-1"></i>
+<h2 class="card-title">App Devlopment </h2>
+<div class="card-text">
+<p>Something about to webdesiner for game Again Now So webdeginer for get upcoming for get now s ...</p>
+<button class="btn btn-primary"><i class="fa fa-pencil"> Readme</i></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row py-3" data-aos="zoom-in-up" data-aos-offset="200">
+<div class="col-12 col-sm-12 col-md-4 col-lg-4 py-2">
+<div class="card">
+<div class="card-body">
+<i class="fa fa-users bg-primary text-white rounded fa-1 p-2"></i>
+<h2 class="card-title">Web Designer</h2>
+<div class="card-text">
+<p>Something about to webdesiner for game Again Now So webdeginer for get upcoming for get now s ...</p>
+<button class="btn btn-primary"><i class="fa fa-pencil"> Readme</i></button>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-12 col-md-4 col-lg-4 py-2">
+<div class="card bg-primary text-white">
+<div class="card-body">
+<i class="fa fa-code bg-info fa-1 text-white p-2 rounded"></i>
+<h2 class="card-title">Web Devlopment</h2>
+<div class="card-text">
+<p>Something about to webdesiner for game Again Now So webdeginer for get upcoming for get now s ...</p>
+<button class="btn btn-info"><i class="fa fa-pencil"> Readme</i></button>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-12 col-md-4 col-lg-4 py-2">
+<div class="card">
+<div class="card-body">
+<i class="fa fa-code text-white bg-primary p-2 rounded fa-1"></i>
+<h2 class="card-title">App Devlopment </h2>
+<div class="card-text">
+<p>Something about to webdesiner for game Again Now So webdeginer for get upcoming for get now s ...</p>
+<button class="btn btn-primary"><i class="fa fa-pencil"> Readme</i></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="ourteam" class="team text-center">
+<div class="container">
+<div class="txt py-2 text-center">
+<h2 class="txt" data-aos="zoom-in" data-aos-offset="200">Our<span class="text-primary">Team</span></h2>
+<hr class="w-25 m-auto">
+</div>
+<div class="row">
+<div class="col-sm-12 col-md-4 col-lg-4 col-12 py-2">
+<div class="card" data-aos="zoom-in" data-aos-offset="200">
+<div class="card-body">
+<div class="inner">
+<img src="img/mypic.jpg" class="img-fluid rounded-circle border border-primary p-2">
+</div>
+<h5 class="card-title mt-4">Web Designer</h5>
+<p class="card-text"><a class="btn btn-block btn-primary">Go Somewhere </a></p>
+<a class="text-left text-mutud">Social Links -</a>
+<br>
+<a class="icon"><i class="fa fa-facebook"></i></a>
+<a class="icon"><i class="fa fa-twitter"></i></a>
+<a class="icon"><i class="fa fa-linkedin"></i></a>
+<a class="icon"><i class="fa fa-google"></i></a>
+</div>
+</div>
+</div>
+<div class="col-sm-12 col-md-4 col-lg-4 col-12 py-2">
+<div class="card" data-aos="zoom-in" data-aos-offset="200">
+<div class="card-body">
+<div class="inner">
+<img src="img/mypic.jpg" class="img-fluid rounded-circle border border-primary p-2">
+</div>
+<h5 class="card-title mt-4">Web Devlopment</h5>
+<p class="card-text"><a class="btn btn-block btn-primary"> Go Somewhere</a> </p>
+<a class="text-left text-mutud">Social Links -</a>
+<br>
+<a class="icon"><i class="fa fa-facebook"></i></a>
+<a class="icon"><i class="fa fa-twitter"></i></a>
+<a class="icon"><i class="fa fa-linkedin"></i></a>
+<a class="icon"><i class="fa fa-google"></i></a>
+</div>
+</div>
+</div>
+<div class="col-sm-12 col-md-4 col-lg-4 col-12 py-2">
+<div class="card" data-aos="zoom-in" data-aos-offset="200">
+<div class="card-body">
+<div class="inner">
+<img src="img/mypic.jpg" class="img-fluid rounded-circle border border-primary p-2">
+</div>
+<h5 class="card-title mt-4"> Gyphice Designer</h5>
+<p class="card-text"><a class="btn btn-block btn-primary"> Go Somewhere</a></p>
+<a class="text-left text-mutud">Social Links -</a>
+<br>
+<a class="icon"><i class="fa fa-facebook"></i></a>
+<a class="icon"><i class="fa fa-twitter"></i></a>
+<a class="icon"><i class="fa fa-linkedin"></i></a>
+<a class="icon"><i class="fa fa-google"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<br>
+<section id="about as" class="contant bg-dark text-white shadow rounded py-2">
+<div class="container">
+<div class="text-center my-5">
+<h2 class="txt" data-aos="zoom-in" data-aos-offset="200">Fee Free <span class="text-primary">To Connect</span>
+<hr class="w-25 m-auto">
+</h2>
+</div>
+
+<div class="row" data-aos="zoom-in-left" data-aos-offset="200">
+<div class="col-12 col-md-6 col-lg-6 mx-auto">
+<form action="#" method="POST">
+<div class="row">
+<div class="col-6">
+<label class="form-label" for="email"><i class="fa fa-envelope"> Email :</i></label>
+<input type="email" placeholder="Enter Email" class="form-control" id="email" required>
+</div>
+<div class="col-6">
+<label class="form-label" for="psw"><i class="fa fa-lock"> Password :</i></label>
+<input type="password" placeholder="Enter Password" class="form-control" id="psw" required>
+</div>
+<div class="col-12">
+<br>
+<label class="form-label" for="add"><i class="fa fa-phone"> Addresh :</i></label>
+<input type="text" placeholder="Enter addresh" class="form-control" id="add" required>
+</div>
+<div class="col-4">
+<br>
+<label class="form-label" for="city"><i class="fa fa-street-view"> City :</i></label>
+<input type="text" placeholder="City" id="city" class="form-control">
+</div>
+<div class="col-4">
+<br>
+<label class="form-label" for="state"><i class="fa fa-globe"> State :</i></label>
+<select class="form-control" id="state">
+<option>Gujarat</option>
+<option>Uttar Pradesh</option>
+<option>Tamil Nadu</option>
+</select>
+</div>
+<div class="col-4">
+<br>
+<label class="form-label" for="zip"><i class="fa fa-codepen"> ZIP :</i></label>
+<input type="text" placeholder="Zip Code" for="zip" class="form-control">
+</div>
+<div class="col-12 p-2">
+<br>
+<div class="form-check mb-3">
+<label class="form-check-label">
+<input class="form-check-input" type="checkbox" name="Remember">Remermber me</label>
+</div>
+</div>
+</div>
+<button class="btn btn-primary"><i class="fa fa-send"> Submit</i></button>
+</form>
+<div class="d-flex justify-content-space-between p-2 social">
+<a class="icon"><i class="fa fa-facebook"></i></a>
+<a class="icon"><i class="fa fa-twitter"></i></a>
+<a class="icon"><i class="fa fa-linkedin"></i></a>
+<a class="icon"><i class="fa fa-google"></i></a>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg-6 mx-auto pb-2" data-aos="zoom-in-right" data-aos-offset="200">
+<figure>
+<div class="inner">
+<img src="img/mypic.jpg" class="img-fluid rounded" alt="img">
+</div>
+</figure>
+</div>
+</div>
+</section>
+<div class="container-fluid bg-primary text-center text-white p-2">AllrightResource@bharat.com</div>
+</div>
+</div>
+<button id="topbtn"><i class="fa fa-arrow-up"></i></button>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bundle.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$(window).scroll(function(){
+if($(this).scrollTop() > 40){
+$("#topbtn").fadeIn();
+}
+else{
+$("#topbtn").fadeout();
+}
+});
+$("#topbtn").click(function(){
+$("html, body").animate({scrollTop : 0}, 800);
+});
+
+});
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init()
+</script>
+</body>
+</html>
